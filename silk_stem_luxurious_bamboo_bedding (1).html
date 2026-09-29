@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Silk & Stem - Luxurious Bamboo Bedding For A Serene Sleep</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#2D4F36',      /* Deep Sage Green from logo */
+                            accent: '#8B9A60',    /* Warm Olive Leaf Green */
+                            soft: '#EAF0EB',      /* Soft Bamboo Tint */
+                            gold: '#D4AF37',      /* Soft Gold Detail */
+                            sand: '#E2D9C8',      /* Warm Linen Tone */
+                        },
+                        cream: '#F9F7F2',         /* Elegant Silk/Paper Background */
+                    },
+                    fontFamily: {
+                        serif: ['Playfair Display', 'Georgia', 'serif'],
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- FontAwesome & Google Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #F9F7F2;
+            color: #2D3748;
+            font-family: 'Inter', sans-serif;
+        }
+        .font-serif-title {
+            font-family: 'Playfair Display', Georgia, serif;
+        }
+        ::-webkit-scrollbar {
+            width: 7px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #F9F7F2;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #2D4F36;
+            border-radius: 4px;
+        }
+        .bg-pattern {
+            background-image: radial-gradient(#2D4F36 0.5px, transparent 0.5px);
+            background-size: 24px 24px;
+            opacity: 0.05;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col selection:bg-brand-dark selection:text-cream">
+
+    <div class="bg-brand-dark text-cream text-xs sm:text-sm py-2 px-4 text-center font-medium tracking-wide flex items-center justify-center gap-2 relative z-50">
+        <i class="fa-solid fa-earth-americas text-brand-gold"></i>
+        <span><strong>Worldwide Express Shipping Available</strong> — Free Express Delivery on Orders Over $150 USD</span>
+    </div>
+
+    <!-- Top floating cart action button since navigation bar was removed -->
+    <div class="fixed top-12 right-6 z-40">
+        <button onclick="toggleCart()" class="relative p-3.5 bg-brand-dark/90 hover:bg-brand-dark text-cream rounded-full shadow-2xl backdrop-blur-md transition-all flex items-center justify-center border border-brand-gold/30">
+            <i class="fa-solid fa-bag-shopping text-lg"></i>
+            <span id="cartBadge" class="absolute -top-1 -right-1 bg-brand-gold text-brand-dark text-[10px] font-bold w-5 h-5 rounded-full flex items-center justify-center shadow-xs hidden">0</span>
+        </button>
+    </div>
+
+    <section id="hero" class="relative bg-brand-dark text-cream py-20 lg:py-28 overflow-hidden">
+        <div class="absolute inset-0 bg-pattern pointer-events-none"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            
+            <div class="space-y-6 text-center lg:text-left">
+                <!-- Brand Header Logo moved into Hero section -->
+                <div class="inline-flex items-center gap-3 mb-2 bg-cream/10 backdrop-blur-md p-2.5 px-4 rounded-full border border-cream/20">
+                    <img src="Gemini_Generated_Image_bft181bft181bft1.jpg" 
+                         onerror="this.src='https://placehold.co/120x120/2D4F36/F9F7F2?text=Silk+%26+Stem'" 
+                         alt="Silk & Stem Logo" 
+                         class="h-10 w-10 object-cover rounded-full border border-cream/30" />
+                    <div class="text-left">
+                        <span class="font-serif-title text-lg font-bold tracking-widest text-cream block leading-none">SILK & STEM</span>
+                        <span class="text-[8px] tracking-[0.2em] text-brand-sand uppercase font-semibold">Luxurious Bamboo Bedding</span>
+                    </div>
+                </div>
+
+                <br>
+
+                <span class="inline-block px-3.5 py-1 bg-brand-accent/30 border border-brand-accent/40 rounded-full text-xs font-semibold uppercase tracking-widest text-brand-sand">
+                    🌿 100% Organic Bamboo Viscose
+                </span>
+                <h1 class="font-serif-title text-4xl sm:text-6xl font-bold tracking-tight text-cream leading-tight">
+                    Luxurious Bamboo Bedding For A Serene Sleep
+                </h1>
+                <p class="text-cream/80 text-sm sm:text-base leading-relaxed max-w-xl mx-auto lg:mx-0">
+                    Experience unmatched silky softness, active cooling, and hypoallergenic elegance. Discover our newly added 100 bamboo sheet listings crafted for pure nighttime tranquility.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-2">
+                    <a href="#bedsheets" class="px-8 py-4 bg-cream text-brand-dark font-bold text-xs uppercase tracking-widest rounded-full hover:bg-brand-sand transition-all shadow-xl flex items-center justify-center gap-2 group">
+                        <span>Explore 100 Bed Sheets</span>
+                        <i class="fa-solid fa-arrow-down group-hover:translate-y-0.5 transition-transform"></i>
+                    </a>
+                    <a href="#about" class="px-8 py-4 border border-cream/30 text-cream font-bold text-xs uppercase tracking-widest rounded-full hover:bg-cream/10 transition-all text-center">
+                        Our Craft & Story
+                    </a>
+                </div>
+            </div>
+
+            <div class="relative flex justify-center">
+                <div class="relative w-full max-w-md aspect-4/5 rounded-2xl overflow-hidden shadow-2xl border-4 border-cream/20">
+                    <img src="https://images.unsplash.com/photo-1616046229478-9901c5536a45?auto=format&fit=crop&q=80&w=800" alt="Silk & Stem Organic Bamboo Sheets" class="w-full h-full object-cover">
+                    <div class="absolute bottom-4 left-4 right-4 bg-cream/95 backdrop-blur-md p-4 rounded-xl text-brand-dark shadow-lg">
+                        <p class="font-serif-title font-bold text-sm">The Heritage Sateen Collection</p>
+                        <p class="text-xs text-brand-accent font-semibold mt-0.5">Starting from $80 USD | Express Worldwide Shipping</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="py-12 bg-cream border-b border-brand-dark/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 text-center">
+                <div class="p-6 rounded-2xl bg-white/70 border border-brand-dark/5 shadow-xs">
+                    <div class="w-12 h-12 bg-brand-soft rounded-full flex items-center justify-center text-brand-dark text-xl mx-auto mb-3">
+                        <i class="fa-solid fa-snowflake"></i>
+                    </div>
+                    <h3 class="font-serif-title font-bold text-base text-brand-dark">Thermal Regulating</h3>
+                    <p class="text-xs text-gray-600 mt-1">3°C cooler than Egyptian cotton for peaceful sleep.</p>
+                </div>
+
+                <div class="p-6 rounded-2xl bg-white/70 border border-brand-dark/5 shadow-xs">
+                    <div class="w-12 h-12 bg-brand-soft rounded-full flex items-center justify-center text-brand-dark text-xl mx-auto mb-3">
+                        <i class="fa-solid fa-leaf"></i>
+                    </div>
+                    <h3 class="font-serif-title font-bold text-base text-brand-dark">100% Organic</h3>
+                    <p class="text-xs text-gray-600 mt-1">OEKO-TEX® certified sustainable bamboo viscose.</p>
+                </div>
+
+                <div class="p-6 rounded-2xl bg-white/70 border border-brand-dark/5 shadow-xs">
+                    <div class="w-12 h-12 bg-brand-soft rounded-full flex items-center justify-center text-brand-dark text-xl mx-auto mb-3">
+                        <i class="fa-solid fa-feather-pointed"></i>
+                    </div>
+                    <h3 class="font-serif-title font-bold text-base text-brand-dark">400+ Thread Count</h3>
+                    <p class="text-xs text-gray-600 mt-1">Silky sateen, crisp percale, and plush jacquard.</p>
+                </div>
+
+                <div class="p-6 rounded-2xl bg-white/70 border border-brand-dark/5 shadow-xs">
+                    <div class="w-12 h-12 bg-brand-soft rounded-full flex items-center justify-center text-brand-dark text-xl mx-auto mb-3">
+                        <i class="fa-solid fa-earth-americas text-brand-dark"></i>
+                    </div>
+                    <h3 class="font-serif-title font-bold text-base text-brand-dark">Worldwide Shipping</h3>
+                    <p class="text-xs text-gray-600 mt-1">Express delivery to over 180 countries globally.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="bedsheets" class="py-20 bg-brand-soft/40 border-b border-brand-dark/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Section Header -->
+            <div class="text-center max-w-3xl mx-auto mb-12 space-y-3">
+                <span class="text-xs font-bold uppercase tracking-widest text-brand-accent">Full Bamboo Sheets Collection</span>
+                <h2 class="font-serif-title text-3xl sm:text-5xl font-bold text-brand-dark">Explore Our 100 Bed Sheet Listings</h2>
+                <p class="text-xs sm:text-sm text-gray-600">
+                    Prices range strictly from <strong>$80 USD to $380 USD</strong> across all sizes, weave styles, and organic colorways. All orders are eligible for worldwide shipping.
+                </p>
+            </div>
+
+            <div class="flex flex-col lg:flex-row gap-8">
+                
+                <!-- Filter Sidebar -->
+                <aside class="w-full lg:w-64 space-y-6 shrink-0">
+                    <div class="bg-white p-6 rounded-2xl border border-brand-dark/10 shadow-sm space-y-6">
+                        <div class="flex justify-between items-center pb-3 border-b border-gray-100">
+                            <h3 class="font-serif-title font-bold text-brand-dark text-base">Filter Listings</h3>
+                            <button onclick="resetFilters()" class="text-xs text-brand-accent hover:underline font-semibold">Reset</button>
+                        </div>
+
+                        <!-- Search -->
+                        <div>
+                            <label class="block text-xs font-bold uppercase text-brand-dark mb-2">Search Sheets</label>
+                            <div class="relative">
+                                <input type="text" id="searchInput" oninput="applyFilters()" placeholder="Search title or color..." class="w-full p-2.5 pl-8 bg-cream border border-brand-dark/15 rounded-lg text-xs focus:outline-none focus:border-brand-dark">
+                                <i class="fa-solid fa-magnifying-glass absolute left-3 top-3 text-gray-400 text-xs"></i>
+                            </div>
+                        </div>
+
+                        <!-- Fabric Weave -->
+                        <div>
+                            <label class="block text-xs font-bold uppercase text-brand-dark mb-2">Fabric Weave</label>
+                            <select id="weaveFilter" onchange="applyFilters()" class="w-full p-2.5 bg-cream border border-brand-dark/15 rounded-lg text-xs focus:outline-none focus:border-brand-dark">
+                                <option value="ALL">All Weaves</option>
+                                <option value="Organic Sateen">Organic Sateen</option>
+                                <option value="Airy Percale">Airy Percale</option>
+                                <option value="Plush Bamboo Silk">Plush Bamboo Silk</option>
+                                <option value="Linen Blend">Linen Blend</option>
+                            </select>
+                        </div>
+
+                        <!-- Price Slider ($80 to $380 USD) -->
+                        <div>
+                            <div class="flex justify-between items-center mb-1">
+                                <label class="text-xs font-bold uppercase text-brand-dark">Max Price</label>
+                                <span id="priceLabel" class="text-xs font-bold text-brand-accent">$380 USD</span>
+                            </div>
+                            <input type="range" id="priceRange" min="80" max="380" step="10" value="380" oninput="updatePriceLabel(this.value); applyFilters();" class="w-full accent-brand-dark cursor-pointer">
+                            <div class="flex justify-between text-[10px] text-gray-400 mt-1">
+                                <span>$80 USD</span>
+                                <span>$380 USD</span>
+                            </div>
+                        </div>
+
+                        <!-- Bed Sizes -->
+                        <div>
+                            <label class="block text-xs font-bold uppercase text-brand-dark mb-2">Bed Size</label>
+                            <div class="grid grid-cols-2 gap-1.5" id="sizeContainer"></div>
+                        </div>
+
+                        <!-- Colors -->
+                        <div>
+                            <label class="block text-xs font-bold uppercase text-brand-dark mb-2">Color Palette</label>
+                            <div class="flex flex-wrap gap-2" id="colorContainer"></div>
+                        </div>
+                    </div>
+                </aside>
+
+                <!-- Products Grid & Pagination -->
+                <div class="flex-1">
+                    <!-- Top Bar -->
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6 pb-3 border-b border-brand-dark/10">
+                        <p class="text-xs text-gray-600">
+                            Showing <span id="resultCount" class="font-bold text-brand-dark">100</span> bamboo sheet listings
+                        </p>
+                        <div class="flex items-center gap-3">
+                            <label for="sortBy" class="text-xs font-bold uppercase text-brand-dark whitespace-nowrap">Sort By:</label>
+                            <select id="sortBy" onchange="applyFilters()" class="p-2 bg-white border border-brand-dark/15 rounded-lg text-xs focus:outline-none">
+                                <option value="featured">Featured Collection</option>
+                                <option value="price-asc">Price: Low to High</option>
+                                <option value="price-desc">Price: High to Low</option>
+                                <option value="rating">Highest Rated</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- 100 Items Grid -->
+                    <div id="productGrid" class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6"></div>
+
+                    <!-- Pagination -->
+                    <div id="pagination" class="flex justify-center items-center gap-2 mt-10"></div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 bg-cream border-t border-brand-dark/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div class="space-y-4">
+                <span class="text-xs font-bold uppercase tracking-widest text-brand-accent">The Silk & Stem Craft</span>
+                <h2 class="font-serif-title text-3xl font-bold text-brand-dark">Engineered For Pure Serenity</h2>
+                <p class="text-xs sm:text-sm text-gray-600 leading-relaxed">
+                    Silk & Stem was created with a single mission: to fuse the natural strength and breathability of bamboo stems with the soothing touch of pure silk. Every bed sheet is sustainably harvested and crafted without harsh chemicals, yielding a fabric that keeps hot sleepers cool and cold sleepers cozy.
+                </p>
+                <div class="pt-2 flex gap-6 text-xs text-brand-dark font-semibold">
+                    <div><i class="fa-solid fa-leaf text-brand-accent mr-1"></i> Eco-Harvested</div>
+                    <div><i class="fa-solid fa-droplet text-brand-accent mr-1"></i> Chemical Free</div>
+                    <div><i class="fa-solid fa-award text-brand-accent mr-1"></i> OEKO-TEX Standard</div>
+                </div>
+            </div>
+            <div class="rounded-2xl overflow-hidden shadow-lg border border-brand-dark/10">
+                <img src="https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?auto=format&fit=crop&q=80&w=800" alt="Silk & Stem Story" class="w-full h-72 object-cover">
+            </div>
+        </div>
+    </section>
+
+    <section id="reviews" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <span class="text-xs font-bold uppercase tracking-widest text-brand-accent">Global Customer Reviews</span>
+                <h2 class="font-serif-title text-3xl font-bold text-brand-dark">Loved Around The World</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="p-6 bg-cream rounded-2xl border border-brand-dark/5 space-y-3">
+                    <div class="text-amber-500 text-xs flex gap-1"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    <p class="text-xs text-gray-600 italic">"The softest sheets I have ever slept on. Shipped to London in just 3 days! The Olive Green weave matches our room perfectly."</p>
+                    <p class="text-xs font-bold text-brand-dark">— Eleanor V., London UK</p>
+                </div>
+
+                <div class="p-6 bg-cream rounded-2xl border border-brand-dark/5 space-y-3">
+                    <div class="text-amber-500 text-xs flex gap-1"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    <p class="text-xs text-gray-600 italic">"Finally found a brand that sells deep-pocket split king bamboo sheets that stay in place all night. Fast worldwide shipping."</p>
+                    <p class="text-xs font-bold text-brand-dark">— Marcus T., Sydney AU</p>
+                </div>
+
+                <div class="p-6 bg-cream rounded-2xl border border-brand-dark/5 space-y-3">
+                    <div class="text-amber-500 text-xs flex gap-1"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    <p class="text-xs text-gray-600 italic">"The temperature regulation is incredible. No more waking up overheated on summer nights. Silk & Stem is pure perfection."</p>
+                    <p class="text-xs font-bold text-brand-dark">— Sophia M., New York USA</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-brand-dark text-cream pt-16 pb-8 border-t border-brand-accent/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
+            <div class="space-y-3">
+                <span class="font-serif-title text-2xl font-bold tracking-wider text-cream block">SILK & STEM</span>
+                <p class="text-xs text-cream/70 leading-relaxed">
+                    Luxurious bamboo bedding designed for ultimate cooling, soothing softness, and serene sleep worldwide.
+                </p>
+            </div>
+
+            <div>
+                <h4 class="font-serif-title font-bold text-sm text-cream mb-3">Quick Links</h4>
+                <ul class="text-xs text-cream/70 space-y-2">
+                    <li><a href="#hero" class="hover:text-cream">Home</a></li>
+                    <li><a href="#bedsheets" class="hover:text-cream">100 Bed Sheets Collection</a></li>
+                    <li><a href="#about" class="hover:text-cream">Our Craft</a></li>
+                    <li><a href="#reviews" class="hover:text-cream">Customer Reviews</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="font-serif-title font-bold text-sm text-cream mb-3">Worldwide Shipping</h4>
+                <ul class="text-xs text-cream/70 space-y-1.5">
+                    <li><i class="fa-solid fa-check text-brand-gold mr-1"></i> 180+ Countries Covered</li>
+                    <li><i class="fa-solid fa-check text-brand-gold mr-1"></i> Express Air Courier</li>
+                    <li><i class="fa-solid fa-check text-brand-gold mr-1"></i> Free Shipping Over $150 USD</li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="font-serif-title font-bold text-sm text-cream mb-3">Newsletter</h4>
+                <p class="text-xs text-cream/70 mb-3">Subscribe for serene sleep tips and exclusive releases.</p>
+                <div class="flex gap-2">
+                    <input type="email" placeholder="Your email address" class="bg-cream/10 border border-cream/20 text-cream px-3 py-2 rounded-lg text-xs w-full focus:outline-none">
+                    <button class="bg-brand-gold text-brand-dark font-bold px-4 py-2 rounded-lg text-xs hover:bg-white transition-colors">Join</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 text-center border-t border-cream/10 pt-6 text-xs text-cream/50">
+            &copy; 2026 Silk & Stem. All Rights Reserved. Luxurious Bamboo Bedding.
+        </div>
+    </footer>
+
+    <!-- Quick View Modal -->
+    <div id="productModal" class="fixed inset-0 bg-black/60 backdrop-blur-xs z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-white rounded-2xl max-w-2xl w-full overflow-hidden shadow-2xl relative">
+            <button onclick="closeProductModal()" class="absolute top-3 right-3 z-10 w-8 h-8 bg-cream hover:bg-brand-soft rounded-full flex items-center justify-center text-brand-dark">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div id="modalBody" class="grid grid-cols-1 md:grid-cols-2"></div>
+        </div>
+    </div>
+
+    <!-- Shopping Cart Drawer -->
+    <div id="cartDrawer" class="fixed inset-0 z-50 hidden">
+        <div class="absolute inset-0 bg-black/50" onclick="toggleCart()"></div>
+        <div class="absolute inset-y-0 right-0 max-w-full flex pl-10">
+            <div class="w-screen max-w-md bg-cream shadow-2xl flex flex-col">
+                <div class="p-6 bg-brand-dark text-cream flex items-center justify-between">
+                    <h2 class="font-serif-title text-lg font-bold flex items-center gap-2">
+                        <i class="fa-solid fa-bag-shopping text-brand-gold"></i> Your Shopping Bag
+                    </h2>
+                    <button onclick="toggleCart()" class="text-cream/80 hover:text-white"><i class="fa-solid fa-xmark text-lg"></i></button>
+                </div>
+
+                <div id="cartItems" class="flex-1 overflow-y-auto p-6 space-y-4"></div>
+
+                <div class="p-6 bg-white border-t border-brand-dark/10 space-y-3">
+                    <div class="flex justify-between text-xs text-gray-600">
+                        <span>Subtotal</span>
+                        <span id="cartSubtotal" class="font-bold text-brand-dark">$0.00 USD</span>
+                    </div>
+                    <div class="flex justify-between text-xs text-gray-600">
+                        <span>Worldwide Express Shipping</span>
+                        <span id="cartShipping" class="font-bold text-brand-accent">$0.00 USD</span>
+                    </div>
+                    <div class="flex justify-between text-sm font-bold text-brand-dark pt-2 border-t border-gray-100">
+                        <span>Total</span>
+                        <span id="cartTotal" class="font-serif-title text-base">$0.00 USD</span>
+                    </div>
+
+                    <button onclick="alert('Redirecting to secure worldwide checkout!')" class="w-full py-3.5 bg-brand-dark text-cream font-bold text-xs uppercase tracking-widest rounded-xl hover:bg-brand-accent transition-colors shadow-lg">
+                        Checkout Worldwide
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="fixed bottom-6 right-6 bg-brand-dark text-cream px-5 py-3 rounded-xl shadow-2xl transform translate-y-20 opacity-0 transition-all duration-300 z-50 flex items-center gap-3">
+        <i class="fa-solid fa-circle-check text-brand-gold"></i>
+        <span id="toastMsg" class="text-xs font-medium">Added to cart.</span>
+    </div>
+
+    <script>
+        const WEAVES = ['Organic Sateen', 'Airy Percale', 'Plush Bamboo Silk', 'Linen Blend'];
+        const SIZES = ['Twin', 'Full', 'Queen', 'King', 'Cal King', 'Split King'];
+        const COLORS = [
+            { name: 'Olive Green', hex: '#6B8E73' },
+            { name: 'Silk White', hex: '#FFFFFF' },
+            { name: 'Natural Linen', hex: '#E2D3C1' },
+            { name: 'Deep Forest', hex: '#1C3523' },
+            { name: 'Terracotta', hex: '#C06C84' },
+            { name: 'Slate Gray', hex: '#708090' },
+            { name: 'Midnight Slate', hex: '#34495E' },
+            { name: 'Soft Sage', hex: '#A3B899' }
+        ];
+
+        const IMAGES = [
+            'https://images.unsplash.com/photo-1616046229478-9901c5536a45?auto=format&fit=crop&q=80&w=600',
+            'https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?auto=format&fit=crop&q=80&w=600',
+            'https://images.unsplash.com/photo-1584100936595-c0654b55a2e2?auto=format&fit=crop&q=80&w=600',
+            'https://images.unsplash.com/photo-1615874959474-d609969a20ed?auto=format&fit=crop&q=80&w=600',
+            'https://images.unsplash.com/photo-1631679706909-1844bbd07221?auto=format&fit=crop&q=80&w=600',
+            'https://images.unsplash.com/photo-1540518614846-7eded433c457?auto=format&fit=crop&q=80&w=600'
+        ];
+
+        // Generate 100 listings strictly priced between $80 and $380 USD
+        const products = [];
+        for (let i = 1; i <= 100; i++) {
+            const weave = WEAVES[i % WEAVES.length];
+            const size = SIZES[i % SIZES.length];
+            const colorObj = COLORS[i % COLORS.length];
+            const price = 80 + Math.floor(((i - 1) / 99) * 300);
+
+            products.push({
+                id: i,
+                title: `${colorObj.name} ${weave} Bamboo Sheet Set`,
+                weave: weave,
+                size: size,
+                color: colorObj.name,
+                colorHex: colorObj.hex,
+                price: price,
+                rating: (4.6 + ((i % 5) * 0.1)).toFixed(1),
+                reviews: 14 + (i * 7) % 180,
+                image: IMAGES[i % IMAGES.length],
+                description: `Sustainably crafted from 100% organic bamboo viscose in a ${weave} weave. Highly breathable, thermal-regulating, and hypoallergenic for serenely soft sleep.`
+            });
+        }
+
+        let filteredProducts = [...products];
+        let currentPage = 1;
+        const perPage = 12;
+        let selectedSizes = [];
+        let selectedColors = [];
+        let cart = [];
+
+        window.onload = function() {
+            renderFilterControls();
+            applyFilters();
+        };
+
+        function renderFilterControls() {
+            // Sizes
+            document.getElementById('sizeContainer').innerHTML = SIZES.map(s => `
+                <label class="flex items-center gap-2 text-xs text-gray-700 cursor-pointer bg-cream p-1.5 rounded border border-brand-dark/10">
+                    <input type="checkbox" value="${s}" onchange="toggleSize('${s}')" class="accent-brand-dark">
+                    <span>${s}</span>
+                </label>
+            `).join('');
+
+            // Colors
+            document.getElementById('colorContainer').innerHTML = COLORS.map(c => `
+                <button onclick="toggleColor('${c.name}')" title="${c.name}" id="chip-${c.name.replace(/\s+/g, '')}"
+                        class="w-6 h-6 rounded-full border border-gray-300 flex items-center justify-center transition-transform hover:scale-110"
+                        style="background-color: ${c.hex}">
+                </button>
+            `).join('');
+        }
+
+        function updatePriceLabel(val) {
+            document.getElementById('priceLabel').innerText = `$${val} USD`;
+        }
+
+        function toggleSize(s) {
+            if (selectedSizes.includes(s)) selectedSizes = selectedSizes.filter(x => x !== s);
+            else selectedSizes.push(s);
+            applyFilters();
+        }
+
+        function toggleColor(c) {
+            if (selectedColors.includes(c)) selectedColors = selectedColors.filter(x => x !== c);
+            else selectedColors.push(c);
+            
+            COLORS.forEach(col => {
+                const el = document.getElementById(`chip-${col.name.replace(/\s+/g, '')}`);
+                if (el) {
+                    if (selectedColors.includes(col.name)) el.classList.add('ring-2', 'ring-brand-dark', 'scale-110');
+                    else el.classList.remove('ring-2', 'ring-brand-dark', 'scale-110');
+                }
+            });
+            applyFilters();
+        }
+
+        function applyFilters() {
+            const weave = document.getElementById('weaveFilter').value;
+            const maxPrice = parseFloat(document.getElementById('priceRange').value);
+            const query = (document.getElementById('searchInput').value || '').toLowerCase().trim();
+            const sort = document.getElementById('sortBy').value;
+
+            filteredProducts = products.filter(p => {
+                if (weave !== 'ALL' && p.weave !== weave) return false;
+                if (p.price > maxPrice) return false;
+                if (selectedSizes.length > 0 && !selectedSizes.includes(p.size)) return false;
+                if (selectedColors.length > 0 && !selectedColors.includes(p.color)) return false;
+                if (query && !p.title.toLowerCase().includes(query) && !p.color.toLowerCase().includes(query)) return false;
+                return true;
+            });
+
+            if (sort === 'price-asc') filteredProducts.sort((a,b) => a.price - b.price);
+            if (sort === 'price-desc') filteredProducts.sort((a,b) => b.price - a.price);
+            if (sort === 'rating') filteredProducts.sort((a,b) => b.rating - a.rating);
+
+            currentPage = 1;
+            document.getElementById('resultCount').innerText = filteredProducts.length;
+            renderGrid();
+        }
+
+        function resetFilters() {
+            document.getElementById('weaveFilter').value = 'ALL';
+            document.getElementById('priceRange').value = 380;
+            document.getElementById('priceLabel').innerText = '$380 USD';
+            document.getElementById('searchInput').value = '';
+            selectedSizes = [];
+            selectedColors = [];
+            document.querySelectorAll('#sizeContainer input').forEach(cb => cb.checked = false);
+            COLORS.forEach(c => {
+                const el = document.getElementById(`chip-${c.name.replace(/\s+/g, '')}`);
+                if (el) el.classList.remove('ring-2', 'ring-brand-dark', 'scale-110');
+            });
+            applyFilters();
+        }
+
+        function renderGrid() {
+            const grid = document.getElementById('productGrid');
+            const start = (currentPage - 1) * perPage;
+            const items = filteredProducts.slice(start, start + perPage);
+
+            if (items.length === 0) {
+                grid.innerHTML = `<p class="col-span-full text-center text-xs text-gray-500 py-12">No bed sheet listings match your selected criteria.</p>`;
+                renderPagination();
+                return;
+            }
+
+            grid.innerHTML = items.map(p => `
+                <div class="bg-white rounded-2xl overflow-hidden border border-brand-dark/10 shadow-xs hover:shadow-xl transition-all flex flex-col group">
+                    <div class="relative aspect-4/3 overflow-hidden bg-cream cursor-pointer" onclick="openModal(${p.id})">
+                        <img src="${p.image}" alt="${p.title}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <span class="absolute top-3 left-3 bg-white/90 backdrop-blur-md text-brand-dark text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded-full shadow-xs">
+                            ${p.size}
+                        </span>
+                        <span class="absolute top-3 right-3 bg-brand-dark text-cream text-[11px] font-bold px-2.5 py-0.5 rounded-full">
+                            $${p.price} USD
+                        </span>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center gap-1 text-amber-500 text-xs mb-1">
+                                <i class="fa-solid fa-star"></i>
+                                <span class="font-bold text-brand-dark">${p.rating}</span>
+                                <span class="text-gray-400">(${p.reviews})</span>
+                            </div>
+                            <h3 onclick="openModal(${p.id})" class="font-serif-title text-sm font-bold text-brand-dark hover:text-brand-accent transition-colors cursor-pointer line-clamp-1 mb-1">
+                                ${p.title}
+                            </h3>
+                            <p class="text-[11px] text-gray-500 mb-3">${p.weave} • ${p.color}</p>
+                        </div>
+                        <div class="flex items-center gap-2 pt-3 border-t border-gray-100">
+                            <button onclick="openModal(${p.id})" class="flex-1 py-2 text-xs font-bold text-brand-dark bg-cream hover:bg-brand-soft rounded-lg transition-colors text-center">Quick View</button>
+                            <button onclick="addToCart(${p.id})" class="py-2 px-3 bg-brand-dark hover:bg-brand-accent text-cream text-xs font-bold rounded-lg transition-colors flex items-center justify-center gap-1">
+                                <i class="fa-solid fa-plus"></i> Add
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+
+            renderPagination();
+        }
+
+        function renderPagination() {
+            const totalPages = Math.ceil(filteredProducts.length / perPage);
+            const container = document.getElementById('pagination');
+            if (totalPages <= 1) { container.innerHTML = ''; return; }
+
+            let html = '';
+            for (let i = 1; i <= totalPages; i++) {
+                html += `
+                    <button onclick="currentPage=${i}; renderGrid();" class="w-8 h-8 rounded-lg text-xs font-bold ${i === currentPage ? 'bg-brand-dark text-cream' : 'bg-white border border-gray-200 text-brand-dark'}">
+                        ${i}
+                    </button>
+                `;
+            }
+            container.innerHTML = html;
+        }
+
+        function openModal(id) {
+            const p = products.find(x => x.id === id);
+            if (!p) return;
+
+            document.getElementById('modalBody').innerHTML = `
+                <div class="aspect-square bg-cream overflow-hidden">
+                    <img src="${p.image}" class="w-full h-full object-cover">
+                </div>
+                <div class="p-6 flex flex-col justify-between space-y-4">
+                    <div>
+                        <span class="text-[10px] font-bold uppercase tracking-widest text-brand-accent">${p.weave}</span>
+                        <h2 class="font-serif-title text-xl font-bold text-brand-dark mt-1">${p.title}</h2>
+                        <p class="text-xl font-serif-title font-bold text-brand-dark mt-2">$${p.price} USD</p>
+                        <p class="text-xs text-gray-600 mt-3 leading-relaxed">${p.description}</p>
+                        <ul class="text-xs text-gray-600 mt-4 space-y-1">
+                            <li>• <strong>Size:</strong> ${p.size}</li>
+                            <li>• <strong>Color:</strong> ${p.color}</li>
+                            <li>• <strong>Shipping:</strong> Free worldwide shipping over $150</li>
+                        </ul>
+                    </div>
+                    <button onclick="addToCart(${p.id}); closeProductModal();" class="w-full py-3 bg-brand-dark text-cream font-bold text-xs uppercase tracking-widest rounded-xl hover:bg-brand-accent">
+                        Add To Bag ($${p.price} USD)
+                    </button>
+                </div>
+            `;
+            document.getElementById('productModal').classList.remove('hidden');
+        }
+
+        function closeProductModal() {
+            document.getElementById('productModal').classList.add('hidden');
+        }
+
+        function addToCart(id) {
+            const p = products.find(x => x.id === id);
+            const exist = cart.find(x => x.id === id);
+            if (exist) exist.qty += 1;
+            else cart.push({ ...p, qty: 1 });
+            updateCartUI();
+            showToast(`Added "${p.title}" to bag.`);
+        }
+
+        function toggleCart() {
+            document.getElementById('cartDrawer').classList.toggle('hidden');
+        }
+
+        function updateCartUI() {
+            const totalQty = cart.reduce((sum, item) => sum + item.qty, 0);
+            const badge = document.getElementById('cartBadge');
+            if (totalQty > 0) {
+                badge.innerText = totalQty;
+                badge.classList.remove('hidden');
+            } else {
+                badge.classList.add('hidden');
+            }
+
+            const subtotal = cart.reduce((sum, item) => sum + (item.price * item.qty), 0);
+            const shipping = subtotal >= 150 || subtotal === 0 ? 0 : 25;
+            const total = subtotal + shipping;
+
+            document.getElementById('cartSubtotal').innerText = `$${subtotal.toFixed(2)} USD`;
+            document.getElementById('cartShipping').innerText = shipping === 0 ? (subtotal > 0 ? 'FREE' : '$0.00') : `$${shipping.toFixed(2)} USD`;
+            document.getElementById('cartTotal').innerText = `$${total.toFixed(2)} USD`;
+
+            document.getElementById('cartItems').innerHTML = cart.length === 0 ? 
+                `<p class="text-center text-xs text-gray-400 py-8">Your shopping bag is empty.</p>` :
+                cart.map(item => `
+                    <div class="flex items-center gap-3 bg-white p-3 rounded-xl border border-brand-dark/10">
+                        <img src="${item.image}" class="w-14 h-14 object-cover rounded-lg">
+                        <div class="flex-1">
+                            <h4 class="font-serif-title font-bold text-xs text-brand-dark line-clamp-1">${item.title}</h4>
+                            <p class="text-[10px] text-gray-500">${item.size} • $${item.price} USD</p>
+                            <span class="text-xs font-bold text-brand-dark">Qty: ${item.qty}</span>
+                        </div>
+                        <span class="text-xs font-bold text-brand-dark">$${item.price * item.qty}</span>
+                    </div>
+                `).join('');
+        }
+
+        function showToast(msg) {
+            const toast = document.getElementById('toast');
+            document.getElementById('toastMsg').innerText = msg;
+            toast.classList.remove('translate-y-20', 'opacity-0');
+            setTimeout(() => toast.classList.add('translate-y-20', 'opacity-0'), 2500);
+        }
+    </script>
+</body>
+</html>
